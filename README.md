@@ -6,4 +6,4 @@ A maven project that build automatically when pushed to github.
 ### Steps Followed:
 * Project pushed on github
 * Github Automatically invokes the jenkins server
-* Jenkins server builds the project
+* Jenkins server picks up and builds the project
