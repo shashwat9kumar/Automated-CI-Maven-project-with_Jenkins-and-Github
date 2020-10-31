@@ -10,4 +10,3 @@ A maven project that automatically triggers a remote Jenkins server when changes
 * Activate github webhooks for automated build triggering
 * Creating the automated pipeline for Continuous Integration
 * Testing the pipeline via a test push/commit
-
