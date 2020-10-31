@@ -24,7 +24,7 @@ pipeline{
           echo 'Start the Compile phase'
           }
       }
-      stage('Clean'){
+      stage('Compile'){
           steps{
           sh 'mvn compile'
           }
