@@ -15,7 +15,18 @@ pipeline{
       }
       stage('Clean'){
           steps{
-          bat 'mvn clean'
+          sh 'mvn clean'
+          }
+      }
+        
+        stage('Compile phase Starts'){
+          steps{
+          echo 'Start the Compile phase'
+          }
+      }
+      stage('Clean'){
+          steps{
+          sh 'mvn compile'
           }
       }
       
@@ -28,7 +39,7 @@ pipeline{
       }
         stage('Test'){
           steps{
-          bat 'mvn test'
+          sh 'mvn test'
           }
       }
        
@@ -40,7 +51,7 @@ pipeline{
       }
         stage('Install'){
           steps{
-          bat 'mvn install'
+          sh 'mvn install'
           }
       }
         
